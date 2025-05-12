@@ -1,0 +1,19 @@
+{
+    "name": "raveesgohiel/dbscanner",
+    "description": "A package for Laravel that will simply allow user to get some valuable stats like total users, total tables in the DB, total rows and fields in each table and more.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Raveesgohiel\\Dbscanner\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "raveesgohiel",
+            "email": "ravi_gohil999@yahoo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
