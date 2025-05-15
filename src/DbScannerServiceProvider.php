@@ -23,6 +23,6 @@ class DbScannerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        dd("Here in boot");
+        
     }
 }
