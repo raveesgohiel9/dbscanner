@@ -1,5 +1,5 @@
 <?php
-namespace DbScanner;
+namespace Raveesgohiel\Dbscanner;
 
 use Exception;
 use Illuminate\Support\Facades\Schema;
