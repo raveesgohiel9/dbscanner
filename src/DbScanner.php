@@ -6,8 +6,8 @@ use Illuminate\Support\Facades\Schema;
 
 class DbScanner {
     
-    public function __construct(public $tables, public $views, private $db_report) {
-        $this->db_report = [];
+    public function __construct(public $tables = [], public $views = [], private $db_report = []) {
+
     }
 
     public function scan() {
