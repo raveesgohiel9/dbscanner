@@ -8,6 +8,13 @@
             "Raveesgohiel\\Dbscanner\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Raveesgohiel\\Dbscanner\\DbScannerServiceProvider"
+            ]
+        }
+    },
     "authors": [
         {
             "name": "raveesgohiel",

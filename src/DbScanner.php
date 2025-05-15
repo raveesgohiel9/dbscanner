@@ -11,9 +11,9 @@ class DbScanner {
     }
 
     public function scan() {
-        $this->tables = Schema::getTables();
+        //$this->tables = Schema::getTables();
         //For Loop for the table goes here 
-
+        return $this->tables;
     }
 
     private function getTableIndexes($table_name = "") {
