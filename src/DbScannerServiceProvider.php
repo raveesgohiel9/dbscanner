@@ -13,7 +13,10 @@ class DbScannerServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        
+        $this->app->singleton('dbscanner', function($app){
+            return new DbScannerService();
+        });
     }
 
     /**
