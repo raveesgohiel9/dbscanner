@@ -2,25 +2,18 @@
 
 namespace Raveesgohiel\Dbscanner;
 
-use Illuminate\Support\Facades\DB;
+use Raveesgohiel\Dbscanner\Models\DbScanner;
 
 class DbScannerService {
 
+    /**
+     * DB Scanner function
+     * 
+     * @return array
+     */
     public function scan() {
-        $tables = DB::select('SHOW TABLES');
-        return $tables;
-    }
-
-    private function getTableIndexes($table_name = "", $schema) {
-        if (!empty($table_name)) {
-            $table_indexes = $schema->getIndexes($table_name);
-            return $table_indexes;
-        } 
-
-        return null;
-    }
-
-    public function getReport() {
-        return $this->db_report;
+        $dbscanner = new DbScanner;
+        $final_result = $dbscanner->getTablesMetaData();
+        return $final_result;
     }
 }
