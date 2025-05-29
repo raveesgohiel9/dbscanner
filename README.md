@@ -12,4 +12,4 @@ You must add the DbScanner class to your controller. Then just use the scan(). T
 $db_report = DbScanner::scan();
 ```
 
-This will return an array of all the tables, with fields, primary keys and even totoal row count. 
+This will return an array of all the tables, with fields, primary keys and even total row count. 
